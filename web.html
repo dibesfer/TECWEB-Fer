@@ -12,53 +12,87 @@
 	<meta name="description" content="Mi primera página web. Una página web de ejemplo">
 	<meta charset="UTF-8">
 	<style>
-	
-		*{
-			margin:0;
-			box-sizing:border-box
+		* {
+			margin: 0;
+			box-sizing: border-box
 		}
-	
+
 		body {
 			line-height: 2;
 			background-color: lightyellow;
 			font-family: sans-serif;
-			
+
 		}
 
 		header {
-			background-color: lightblue;
+			background-color: rgb(0, 34, 4);
+			background-image: url(https://img.freepik.com/foto-gratis/fiesta-halloween_23-2148603731.jpg?semt=ais_items_boosted&w=740);
+			background-position: center;
+			/* Center the image */
+			background-repeat: no-repeat;
+			/* Do not repeat the image */
+			background-size: cover;
+			/* Resize the background image to cover the entire container */
+			color: white;
 			padding: 5px;
-			text-align:center;
+			text-align: center;
+
 		}
-		
+
+		button {
+			font: unset;
+			
+			border: solid 3px black;
+			background-color: white;
+		}
+
+		button:hover {
+			background-color: gray;
+			color: white;
+		}
+
+		button:active {
+			
+			background-color: green;
+		}
+
 		main {
-		
-			padding: 5px;
-		
+
+			padding: 0 10px;
+
 		}
-		
+
 		footer {
 			padding: 5px;
-			box-shadow: inset  0 -40px 25px -25px rgba(0, 0, 0, 0.54) ;
+			box-shadow: inset 0 -40px 25px -25px rgba(0, 0, 0, 0.54);
 			background-color: gold;
-		
+			color: rgb(133, 217, 220);
+			background-image: url(https://t3.ftcdn.net/jpg/03/53/28/08/360_F_353280884_oyeOLzk0EyvfC4pvixbvcfA4s745SaX6.jpg);
+			background-position: center;
+			/* Center the image */
+			background-repeat: no-repeat;
+			/* Do not repeat the image */
+			background-size: cover;
+			/* Resize the background image to cover the entire container */
+
 		}
 
 		#mainTitle {
 			color: limegreen;
-			text-shadow: 2px 2px 1px darkgreen;
-			text-decoration: underline
+			text-shadow: 3px 3px 1px darkgreen;
+			letter-spacing: 2pt;
+			/* text-decoration: underline */
 		}
 
 		.greatWord {
 			font-size: 60px;
 			font-style: italic;
 			text-shadow: 5px 5px 2px red;
-			
+
 		}
-		
-		.pinkBox{
-		
+
+		.pinkBox {
+
 			background-color: pink;
 			padding: 20px 5px;
 			border: groove 10px darkmagenta;
@@ -67,116 +101,124 @@
 			font-family: monospace;
 			font-size: x-large;
 		}
-		
+
 		hr {
 			border: dashed 5px orange;
 			margin: 15px 0;
 		}
-		
+
 		::selection {
-			background-color:darkgreen;
+			background-color: darkgreen;
 			color: white;
 		}
-		
+
 		del {
-		  color: red
+			color: red
 		}
-		
-		img , iframe {
-		  max-width: 100%
+
+		img,
+		iframe {
+			max-width: 100%
 		}
-		
 	</style>
 </head>
 
 <body>
-	<header >
-		<h1 id="mainTitle" >👋Bienvenido máquina🤖</h1>
+	<header>
+		<h1 id="mainTitle">👋 Bienvenido máquina 🤖</h1>
 		<h3><em>A mi primera p&aacute;gina web</em></h3>
 		<p>Hoy es <span id="diadehoy"></span></p>
 		<nav>Home | Shop | &lt;Contact&gt; | About</nav>
+
 	</header>
 	<hr>
 	<main>
-	
-	<h2>¡Hola Mundo!🌍</h2>
-	<img style="float:left" height="100px"
-		src="https://upload.wikimedia.org/wikipedia/commons/7/7f/Rotating_earth_animated_transparent.gif">
 
-	<p><strong>Buenos días España 🇪🇸
-	</strong>. Hola caracola. 🐚<b>Hola caracola.</b> <i>Hola caracola.</i> </p>
-	<p> Hola caracola. Espacio en blanco &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-		Espacio en blanco</p>
-	<p>Probando, probando, un dos tres, probando, probando. <em>¿Se me oye?</em></p>
-	
-	<button onclick="botoncito()">Click on me!</button><span id="botoncitodecir"></span>
-	
-	<hr style="clear: both">
-	
-	<div class="pinkBox">
-	
-		<p style="text-align:center">Entidades con ampersand & <br> &Atilde; &Auml; &Acirc; &Aacute; &Agrave; &amp; &copy; & &reg;</p>
-		
-	
-	</div>
-	
-	<section>
-		<article>
-			<h2>Etiquetas especiales</h2>
-			<p>kbd: Para copiar <kbd>CTRL</kbd> + <kbd>V</kbd></p>
-			<p>mark: <mark>importante</mark></p>
-			<p>small: <small>pequeñito</small></p>
-			<p>code:</p>
-			<code>
+		<h2>¡Hola Mundo!🌍</h2>
+		<img style="float:left" height="100px"
+			src="https://upload.wikimedia.org/wikipedia/commons/7/7f/Rotating_earth_animated_transparent.gif">
+
+		<p><strong>Buenos días España 🇪🇸
+			</strong>. Hola caracola. 🐚<b>Hola caracola.</b> <i>Hola caracola.</i> </p>
+		<p> Hola caracola. Espacio en blanco &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+			Espacio en blanco</p>
+		<p>Probando, probando, un dos tres, probando, probando. <em>¿Se me oye?</em></p>
+
+		<button onclick="botoncito()">Click on me!</button><span id="botoncitodecir"></span>
+
+		<hr style="clear: both">
+
+		<div class="pinkBox">
+
+			<p style="text-align:center">Entidades con ampersand & <br> &Atilde; &Auml; &Acirc; &Aacute; &Agrave; &amp;
+				&copy; & &reg;</p>
+
+
+		</div>
+
+		<section>
+			<article>
+				<h2>Etiquetas especiales</h2>
+				<p>kbd: Para copiar <kbd>CTRL</kbd> + <kbd>V</kbd></p>
+				<p>mark: <mark>importante</mark></p>
+				<p>small: <small>pequeñito</small></p>
+				<p>code:</p>
+				<code>
 			echo "Hello World!";
 			</code>
-			<p>xmp:</p>
-			<xmp><!DOCTYPE html></xmp>
-			<p>del e ins: Ofertón <del>100€</del> <ins>90€</ins></p>
-			<p>sub y sup: <sub>sub</sub> - normal - <sup>sup</sup></p>
-			<p>abbr: <abbr title="HyperText Markup Language">HTML</abbr></p>
-			<p>address: <address>L'Hospitalet de Llobregat, C/ Muntanya 1, 08901</address></p>
-			<p>time: <time datetime="2025-05-30" >30-05-2025</time></p>
-			<p></p>
-			<p></p>
-		</article>
-		
-		<article>
-			<h2>Artículo 2</h2>
-			<p>Descripción del artículo 2: lorem ipsum</p>
-		</article>
-	
-	</section>
-	
+				<p>xmp:</p>
+				<xmp><!DOCTYPE html></xmp>
+				<p>del e ins: Ofertón <del>100€</del> <ins>90€</ins></p>
+				<p>sub y sup: <sub>sub</sub> - normal - <sup>sup</sup></p>
+				<p>abbr: <abbr title="HyperText Markup Language">HTML</abbr></p>
+				<p>address:
+				<address>L'Hospitalet de Llobregat, C/ Muntanya 1, 08901</address>
+				</p>
+				<p>time: <time datetime="2025-05-30">30-05-2025</time></p>
+				<p></p>
+				<p></p>
+			</article>
+
+			<article>
+				<h2>Junio</h2>
+				<p>Descripción de los proyectos que haremos en junio</p>
+			</article>
+
+		</section>
+
 	</main>
 	<hr>
-	
+
 	<footer>
-	<div>
-		<img height="75px" src="https://upload.wikimedia.org/wikipedia/commons/b/b7/Flag_of_Europe.svg"
-			title="Unión Europea">
-		<img height="75px"
-			src="https://upload.wikimedia.org/wikipedia/commons/7/7d/Escudo_de_Espa%C3%B1a_%28variant%29.svg"
-			title="Reino de España">
-		<img height="75px"
-			src="https://upload.wikimedia.org/wikipedia/commons/0/0f/Escut_de_Catalunya_%28apuntat%29.svg"
-			title="Escudo de Cataluña">
-		<img height="75px"
-			src="https://upload.wikimedia.org/wikipedia/commons/1/1a/Escut_de_L%27Hospitalet_de_Llobregat.svg"
-			title="Hospitalet de Llobregat">
-	</div>
-	<img src="https://www.paucasals.com/imagen/logo.png" alt="logotipo de la escuela" title="Logotipo de la escuela"
-		width="50%">
-	<p>Curso de Desarrollo de Aplicaciones con Tecnologías Web</p>
-	<address>L'Hospitalet de Llobregat, C/ Muntanya 1, 08901</address>
-	<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2994.5009285586707!2d2.108042464057572!3d41.36320021503825!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x12a498e0b8e2afdf%3A0xb5df9d184e54032a!2sCarrer%20de%20la%20Muntanya%2C%201%2C%2008901%20L&#39;Hospitalet%20de%20Llobregat%2C%20Barcelona!5e0!3m2!1sca!2ses!4v1748607634195!5m2!1sca!2ses" width="400" height="200" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-	<!--<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2994.5059267134143!2d2.1098341999999968!3d41.3630916!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x12a498e0b8e2afdf%3A0xb5df9d184e54032a!2sCarrer%20de%20la%20Muntanya%2C%201%2C%2008901%20L&#39;Hospitalet%20de%20Llobregat%2C%20Barcelona!5e0!3m2!1ses!2ses!4v1748533248777!5m2!1ses!2ses" width="600" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>-->
-	<p>Made by Ferrán Minero &copy; - 2025-05-29</p>
-	<p class="greatWord">上帝</p>
-	<p> Shàngdì = Dios en chino</p>
+		<div>
+			<img height="75px" src="https://upload.wikimedia.org/wikipedia/commons/b/b7/Flag_of_Europe.svg"
+				title="Unión Europea">
+			<img height="75px"
+				src="https://upload.wikimedia.org/wikipedia/commons/7/7d/Escudo_de_Espa%C3%B1a_%28variant%29.svg"
+				title="Reino de España">
+			<img height="75px"
+				src="https://upload.wikimedia.org/wikipedia/commons/0/0f/Escut_de_Catalunya_%28apuntat%29.svg"
+				title="Escudo de Cataluña">
+			<img height="75px"
+				src="https://upload.wikimedia.org/wikipedia/commons/1/1a/Escut_de_L%27Hospitalet_de_Llobregat.svg"
+				title="Hospitalet de Llobregat">
+		</div>
+		<img style="background-color: rgb(132, 226, 229);padding:5px; border-radius: 15px;" src="https://www.paucasals.com/imagen/logo.png" alt="logotipo de la escuela" title="Logotipo de la escuela"
+			width="50%">
+			<!-- filter: drop-shadow(5px 5px 5px white); -->
+		<p>Curso de Desarrollo de Aplicaciones con Tecnologías Web</p>
+		<address>L'Hospitalet de Llobregat, C/ Muntanya 1, 08901</address>
+		<iframe
+			src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2994.5009285586707!2d2.108042464057572!3d41.36320021503825!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x12a498e0b8e2afdf%3A0xb5df9d184e54032a!2sCarrer%20de%20la%20Muntanya%2C%201%2C%2008901%20L&#39;Hospitalet%20de%20Llobregat%2C%20Barcelona!5e0!3m2!1sca!2ses!4v1748607634195!5m2!1sca!2ses"
+			width="400" height="200" style="border:0;" allowfullscreen="" loading="lazy"
+			referrerpolicy="no-referrer-when-downgrade"></iframe>
+		<!--<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2994.5059267134143!2d2.1098341999999968!3d41.3630916!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x12a498e0b8e2afdf%3A0xb5df9d184e54032a!2sCarrer%20de%20la%20Muntanya%2C%201%2C%2008901%20L&#39;Hospitalet%20de%20Llobregat%2C%20Barcelona!5e0!3m2!1ses!2ses!4v1748533248777!5m2!1ses!2ses" width="600" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>-->
+		<p>Made by Ferrán Minero &copy; - 2025-05-29</p>
+		<p class="greatWord">上帝</p>
+		<p> Shàngdì = Dios en chino</p>
 	</footer>
-	
-	
+
+
 	<script>
 
 		var frases = [
@@ -191,10 +233,10 @@
 		function randomInt(min, max) {
 			return Math.floor(Math.random() * (max - min + 1)) + min;
 		}
-		
+
 		function addZero(i) {
-		  if (i < 10) {i = "0" + i}
-		  return i;
+			if (i < 10) { i = "0" + i }
+			return i;
 		}
 
 		function botoncito() {
@@ -210,14 +252,14 @@
 		var diadentrodelmes = now.getDate()
 		diadehoy.innerHTML = diadelasemana + " " + diadentrodelmes + " de " + mes + " del " + now.getFullYear() + "<br><span style='text-align:right'><b>" + dia + "</b></span>";
 
-		
-		
+
+
 		let h = addZero(now.getHours());
 		let m = addZero(now.getMinutes());
 		let s = addZero(now.getSeconds());
 		let time = h + ":" + m + ":" + s;
 		diadehoy.innerHTML += " - " + time;
-		
+
 
 	</script>
 </body>
