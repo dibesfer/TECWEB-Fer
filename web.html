@@ -17,10 +17,15 @@
 			box-sizing: border-box
 		}
 
+		@font-face {
+			font-family: 'Ubuntu';
+			src: url('/TECWEB-Fer/assets/fonts/Ubuntu-Regular.ttf');
+		}
+
 		body {
 			line-height: 2;
 			background-color: lightyellow;
-			font-family: sans-serif;
+			font-family: ubuntu;
 
 		}
 
@@ -41,7 +46,7 @@
 
 		button {
 			font: unset;
-			
+
 			border: solid 3px black;
 			background-color: white;
 		}
@@ -52,7 +57,7 @@
 		}
 
 		button:active {
-			
+
 			background-color: green;
 		}
 
@@ -92,7 +97,6 @@
 		}
 
 		.pinkBox {
-
 			background-color: pink;
 			padding: 20px 5px;
 			border: groove 10px darkmagenta;
@@ -125,11 +129,12 @@
 
 <body>
 	<header>
-		<h1 id="mainTitle">👋 Bienvenido máquina 🤖</h1>
+		<h1 id="mainTitle">TECWEB-Fer</h1>
+		<p>👋 Bienvenido máquina 🤖</p>
 		<h3><em>A mi primera p&aacute;gina web</em></h3>
 		<p>Hoy es <span id="diadehoy"></span></p>
 		<nav>Home | Shop | &lt;Contact&gt; | About</nav>
-		
+
 
 	</header>
 	<hr>
@@ -143,7 +148,7 @@
 		<p>Hola caracola. Espacio en blanco &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 			Espacio en blanco</p>
 		<p>Probando, probando, un dos tres, probando, probando. <em>¿Se me oye?</em></p>
-		
+
 		<button onclick="botoncito()">Click on me!</button><span id="botoncitodecir"></span>
 
 		<hr style="clear: both">
@@ -167,7 +172,9 @@
 			echo "Hello World!";
 			</code>
 				<p>xmp:</p>
-				<xmp><!DOCTYPE html></xmp>
+				<xmp>
+					<!DOCTYPE html>
+				</xmp>
 				<p>del e ins: Ofertón <del>100€</del> <ins>90€</ins></p>
 				<p>sub y sup: <sub>sub</sub> - normal - <sup>sup</sup></p>
 				<p>abbr: <abbr title="HyperText Markup Language">HTML</abbr></p>
@@ -203,9 +210,10 @@
 				src="https://upload.wikimedia.org/wikipedia/commons/1/1a/Escut_de_L%27Hospitalet_de_Llobregat.svg"
 				title="Hospitalet de Llobregat">
 		</div>
-		<img style="background-color: rgb(132, 226, 229);padding:5px; border-radius: 15px;" src="https://www.paucasals.com/imagen/logo.png" alt="logotipo de la escuela" title="Logotipo de la escuela"
+		<img style="background-color: rgb(132, 226, 229);padding:5px; border-radius: 15px;"
+			src="https://www.paucasals.com/imagen/logo.png" alt="logotipo de la escuela" title="Logotipo de la escuela"
 			width="50%">
-			<!-- filter: drop-shadow(5px 5px 5px white); -->
+		<!-- filter: drop-shadow(5px 5px 5px white); -->
 		<p>Curso de Desarrollo de Aplicaciones con Tecnologías Web</p>
 		<address>L'Hospitalet de Llobregat, C/ Muntanya 1, 08901</address>
 		<iframe
