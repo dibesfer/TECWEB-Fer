@@ -154,6 +154,16 @@
 			background-color: beige;
 			border: solid 3px gray;
 		}
+
+		.pattern-background {
+			/* Example width */
+   height: 40px;/* Example height */
+			background-image: url('https://img.pikbest.com/origin/10/00/10/47ApIkbEsT2h7.png!sw800'); /* Replace with your image */
+			/* Repeat the image both horizontally and vertically */
+			background-size: 100px 100px; /* Size of each tile */
+			background-repeat: repeat-x
+			/* Optional: background-position: top left; */ /* If you want to specify a starting point */
+		}
 	</style>
 </head>
 
@@ -167,6 +177,7 @@
 
 
 	</header>
+	<div class="pattern-background"></div>
 	<hr>
 	<main>
 
@@ -241,8 +252,9 @@
 
 	</main>
 	<hr>
-
+	<div class="pattern-background"></div>
 	<footer>
+
 		<br>
 		<div>
 			<img height="75px" src="https://upload.wikimedia.org/wikipedia/commons/b/b7/Flag_of_Europe.svg"
