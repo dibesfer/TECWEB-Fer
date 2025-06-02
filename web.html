@@ -29,6 +29,10 @@
 
 		}
 
+		a {
+			color: rgb(70, 229, 70)
+		}
+
 		header {
 			background-color: rgb(0, 34, 4);
 			background-image: url(https://img.freepik.com/foto-gratis/fiesta-halloween_23-2148603731.jpg?semt=ais_items_boosted&w=740);
@@ -57,14 +61,14 @@
 		}
 
 		button:active {
-
 			background-color: green;
 		}
 
 		main {
 
 			padding: 0 10px;
-
+			max-width: 800px;
+			margin: auto;
 		}
 
 		footer {
@@ -78,6 +82,7 @@
 			background-repeat: no-repeat;
 			/* Do not repeat the image */
 			background-size: cover;
+			text-align: center;
 			/* Resize the background image to cover the entire container */
 
 		}
@@ -104,6 +109,7 @@
 			box-shadow: inset 0 0 15px purple;
 			font-family: monospace;
 			font-size: x-large;
+			width: max-content;
 		}
 
 		hr {
@@ -124,6 +130,19 @@
 		iframe {
 			max-width: 100%
 		}
+
+		#creditsTitle::before {
+			content: "🙠 ";
+		}
+
+		#creditsTitle::after {
+			content: " 🙢";
+		}
+
+		.decoImage{
+			background-color: beige;
+			border: solid 3px gray;
+		}
 	</style>
 </head>
 
@@ -140,7 +159,7 @@
 	<hr>
 	<main>
 
-		<h2>¡Hola Mundo!🌍</h2>
+		<h2>¡Hola Mundo!🌍 Hello World! 🌎 你好世界! 🌏</h2>
 		<img style="float:left" height="100px"
 			src="https://upload.wikimedia.org/wikipedia/commons/7/7f/Rotating_earth_animated_transparent.gif">
 
@@ -150,8 +169,12 @@
 		<p>Probando, probando, un dos tres, probando, probando. <em>¿Se me oye?</em></p>
 
 		<button onclick="botoncito()">Click on me!</button><span id="botoncitodecir"></span>
+		<br><br>
+		<img class="decoImage" style="clear: both ; width: 200px;"src="https://blz-contentstack-images.akamaized.net/v3/assets/blt3452e3b114fab0cd/blt5fc24cb2747b0d21/6169fe9f35f1b36b742c74a0/0L3WGRUB75G31578518302792.png" alt="">
+		<img class="decoImage" style="clear: both ; width: 200px;"src="https://blz-contentstack-images.akamaized.net/v3/assets/blt3452e3b114fab0cd/bltf98f9b287fd259db/616a0201bdc5454d581ba20f/1S1T3ZP0XYGV1552513933946.png" alt="">
 
-		<hr style="clear: both">
+		<img class="decoImage" style="clear: both ; width: 200px;"src="https://blz-contentstack-images.akamaized.net/v3/assets/blt3452e3b114fab0cd/bltf92062bb8562399a/616a01d15e87796834fb5b0a/V4R3T5LFVXXQ1607718423211.png" alt="">
+		<hr>
 
 		<div class="pinkBox">
 
@@ -172,9 +195,7 @@
 			echo "Hello World!";
 			</code>
 				<p>xmp:</p>
-				<xmp>
-					<!DOCTYPE html>
-				</xmp>
+				<xmp><!DOCTYPE html></xmp>
 				<p>del e ins: Ofertón <del>100€</del> <ins>90€</ins></p>
 				<p>sub y sup: <sub>sub</sub> - normal - <sup>sup</sup></p>
 				<p>abbr: <abbr title="HyperText Markup Language">HTML</abbr></p>
@@ -197,6 +218,7 @@
 	<hr>
 
 	<footer>
+
 		<div>
 			<img height="75px" src="https://upload.wikimedia.org/wikipedia/commons/b/b7/Flag_of_Europe.svg"
 				title="Unión Europea">
@@ -221,9 +243,16 @@
 			width="400" height="200" style="border:0;" allowfullscreen="" loading="lazy"
 			referrerpolicy="no-referrer-when-downgrade"></iframe>
 		<!--<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2994.5059267134143!2d2.1098341999999968!3d41.3630916!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x12a498e0b8e2afdf%3A0xb5df9d184e54032a!2sCarrer%20de%20la%20Muntanya%2C%201%2C%2008901%20L&#39;Hospitalet%20de%20Llobregat%2C%20Barcelona!5e0!3m2!1ses!2ses!4v1748533248777!5m2!1ses!2ses" width="600" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>-->
-		<p>Made by Ferrán Minero &copy; - 2025-05-29</p>
+
 		<p class="greatWord">上帝</p>
 		<p> Shàngdì = Dios en chino</p>
+		<div id="credits">
+			<h2 id="creditsTitle">Credits</h2>
+			<p>Font: Ubuntu <a href="https://fonts.google.com/specimen/Ubuntu">link</a></p>
+			<p>Hosting: Github Pages <a href="https://pages.github.com/">link</a></p>
+			<p>Author: dibesfer <a href="https://dibesfer.github.io">link</a></p>
+			<p>Made by Ferrán Minero &copy; 2025-05-29</p>
+		</div>
 	</footer>
 
 
