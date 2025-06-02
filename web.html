@@ -187,6 +187,7 @@
 		<section>
 			<article>
 				<h2>Etiquetas especiales</h2>
+				<p>bdo: <bdo dir="rtl">Texto al revés</bdo></p>
 				<p>kbd: Para copiar <kbd>CTRL</kbd> + <kbd>V</kbd></p>
 				<p>mark: <mark>importante</mark></p>
 				<p>small: <small>pequeñito</small></p>
@@ -213,6 +214,11 @@
 			</article>
 
 		</section>
+
+		<div>
+			<h2>Fetch text from file</h2>
+			<div id="fetchedText"></div>
+		</div>
 
 	</main>
 	<hr>
@@ -297,6 +303,14 @@
 		let time = h + ":" + m + ":" + s;
 		diadehoy.innerHTML += " - " + time;
 
+		// https://datos.gob.es/apidata/catalog/dataset/a09002970-acciones-formativas-programadas-por-el-consorci-per-a-la-formacio-continua-de-catalunya
+
+		fetch("text.txt")
+			.then(response => response.text())
+			.then((response) => {
+				fetchedText.textContent = response
+			})
+			.catch(err => console.log(err))
 
 	</script>
 </body>
