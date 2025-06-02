@@ -150,20 +150,70 @@
 			content: " 🙢";
 		}
 
-		.decoImage{
+		.decoImage {
 			background-color: beige;
 			border: solid 3px gray;
 		}
 
 		.pattern-background {
 			/* Example width */
-   height: 40px;/* Example height */
-			background-image: url('https://img.pikbest.com/origin/10/00/10/47ApIkbEsT2h7.png!sw800'); /* Replace with your image */
+			height: 40px;
+			/* Example height */
+			background-image: url('https://img.pikbest.com/origin/10/00/10/47ApIkbEsT2h7.png!sw800');
+			/* Replace with your image */
 			/* Repeat the image both horizontally and vertically */
-			background-size: 100px 100px; /* Size of each tile */
+			background-size: 100px 100px;
+			/* Size of each tile */
 			background-repeat: repeat-x
-			/* Optional: background-position: top left; */ /* If you want to specify a starting point */
+				/* Optional: background-position: top left; */
+				/* If you want to specify a starting point */
 		}
+
+		#supermenu {
+			width: max-content;
+			user-select: none;
+			border-left: 10px brown ridge;
+		}
+
+		#supermenu ul {
+			list-style: none;
+			padding: 0;
+		}
+
+		#supermenu ul li {
+			border-radius: 0 15px 15px 0;
+			padding: 5px;
+			width: 100%;
+			transition: 0.2s;
+			border-bottom: rgba(255, 227, 69, 0.577) solid 5px;
+			text-shadow: 1px 1px 2px white;
+
+		}
+
+		#supermenu ul li::before {
+			content: "۞ "
+		}
+
+
+		#supermenu ul li:nth-child(odd) {
+			background-color: rgb(142, 142, 255);
+		}
+
+		#supermenu ul li:nth-child(even) {
+			background-color: rgb(255, 166, 206);
+		}
+
+		#supermenu ul li:hover {
+			color: white;
+			width: 130%;
+			text-shadow: 1px 1px 2px black;
+		}
+
+		/* #supermenu ul li:hover::after {
+			display: inline-block;
+			transform: scale(-1, 1);
+			content: "➯ "
+		} */
 	</style>
 </head>
 
@@ -192,10 +242,16 @@
 
 		<button onclick="botoncito()">Click on me!</button><span id="botoncitodecir"></span>
 		<br><br>
-		<img class="decoImage" style="clear: both ; width: 200px;"src="https://blz-contentstack-images.akamaized.net/v3/assets/blt3452e3b114fab0cd/blt5fc24cb2747b0d21/6169fe9f35f1b36b742c74a0/0L3WGRUB75G31578518302792.png" alt="">
-		<img class="decoImage" style="clear: both ; width: 200px;"src="https://blz-contentstack-images.akamaized.net/v3/assets/blt3452e3b114fab0cd/bltf98f9b287fd259db/616a0201bdc5454d581ba20f/1S1T3ZP0XYGV1552513933946.png" alt="">
+		<img class="decoImage" style="clear: both ; width: 200px;"
+			src="https://blz-contentstack-images.akamaized.net/v3/assets/blt3452e3b114fab0cd/blt5fc24cb2747b0d21/6169fe9f35f1b36b742c74a0/0L3WGRUB75G31578518302792.png"
+			alt="">
+		<img class="decoImage" style="clear: both ; width: 200px;"
+			src="https://blz-contentstack-images.akamaized.net/v3/assets/blt3452e3b114fab0cd/bltf98f9b287fd259db/616a0201bdc5454d581ba20f/1S1T3ZP0XYGV1552513933946.png"
+			alt="">
 
-		<img class="decoImage" style="clear: both ; width: 200px;"src="https://blz-contentstack-images.akamaized.net/v3/assets/blt3452e3b114fab0cd/bltf92062bb8562399a/616a01d15e87796834fb5b0a/V4R3T5LFVXXQ1607718423211.png" alt="">
+		<img class="decoImage" style="clear: both ; width: 200px;"
+			src="https://blz-contentstack-images.akamaized.net/v3/assets/blt3452e3b114fab0cd/bltf92062bb8562399a/616a01d15e87796834fb5b0a/V4R3T5LFVXXQ1607718423211.png"
+			alt="">
 		<hr>
 
 		<div class="pinkBox">
@@ -250,6 +306,24 @@
 			<div id="fetchedText"></div>
 		</div>
 
+		<div>
+			<p>https://www.w3.org/wiki/images/a/af/Cssed_borderstyles.png</p>
+			<h2>Supermenu</h2>
+			<div id="supermenu">
+				<nav>
+					<ul>
+						<li>Portada</li>
+						<li>Presentación</li>
+						<li>Galería</li>
+						<li>Índice</li>
+						<li>Sobre mí</li>
+						<li>Enlaces</li>
+						<li>Contacta</li>
+					</ul>
+				</nav>
+			</div>
+		</div>
+
 	</main>
 	<hr>
 	<div class="pattern-background"></div>
@@ -287,6 +361,7 @@
 			<h2 id="creditsTitle">Credits</h2>
 			<p>Font: Ubuntu <a href="https://fonts.google.com/specimen/Ubuntu">link</a></p>
 			<p>Hosting: Github Pages <a href="https://pages.github.com/">link</a></p>
+			<p>Source Code: Github <a href="https://github.com/dibesfer/TECWEB-Fer">link</a></p>
 			<p>Author: dibesfer <a href="https://dibesfer.github.io">link</a></p>
 			<p>Made by Ferrán Minero &copy; 2025-05-29</p>
 		</div>
