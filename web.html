@@ -19,7 +19,7 @@
 
 		@font-face {
 			font-family: 'Ubuntu';
-			src: url('/TECWEB-Fer/assets/fonts/Ubuntu-Regular.ttf');
+			src: url('/assets/fonts/Ubuntu-Regular.ttf');
 		}
 
 		body {
@@ -29,7 +29,8 @@
 		}
 
 		a {
-			color: rgb(70, 229, 70)
+			color: rgb(70, 229, 70);
+			text-decoration: none;
 		}
 
 		header {
@@ -151,8 +152,9 @@
 		}
 
 		.decoImage {
-			background-color: beige;
-			border: solid 3px gray;
+			background-color: pink;
+			border: ridge 10px brown;
+			box-shadow: inset 0 0 40px rgb(255, 255, 218) ;
 		}
 
 		.pattern-background {
@@ -209,6 +211,16 @@
 			text-shadow: 1px 1px 1px black;
 		}
 
+		#fetchedText{
+			white-space: pre;
+			width: 100%;
+			overflow: auto;
+			background-color: brown;
+			color: white;
+			border: ridge gray 4px;
+			padding: 5px;
+		}
+
 		/* #supermenu ul li:hover::after {
 			display: inline-block;
 			transform: scale(-1, 1);
@@ -245,7 +257,7 @@
 		<img class="decoImage" style="clear: both ; width: 200px;"
 			src="https://blz-contentstack-images.akamaized.net/v3/assets/blt3452e3b114fab0cd/blt5fc24cb2747b0d21/6169fe9f35f1b36b742c74a0/0L3WGRUB75G31578518302792.png"
 			alt="">
-		<img class="decoImage" style="clear: both ; width: 200px;"
+		<img class="decoImage" style="clear: both ; width: 200px; border-radius: 50%;"
 			src="https://blz-contentstack-images.akamaized.net/v3/assets/blt3452e3b114fab0cd/bltf98f9b287fd259db/616a0201bdc5454d581ba20f/1S1T3ZP0XYGV1552513933946.png"
 			alt="">
 
@@ -363,7 +375,7 @@
 			<p>Font: Ubuntu <a href="https://fonts.google.com/specimen/Ubuntu">link</a></p>
 			<p>Hosting: Github Pages <a href="https://pages.github.com/">link</a></p>
 			<p>Source Code: Github <a href="https://github.com/dibesfer/TECWEB-Fer">link</a></p>
-			<p>Author: dibesfer <a href="https://dibesfer.github.io">link</a></p>
+			<p>Author: dibesfer <a href="https://dibesfer.github.io">link</a> Mail: <a href="mailto:dibesfer@gmail.com">dibesfer@gmail.com</a></p>
 			<p>Made by Ferrán Minero &copy; 2025-05-29</p>
 		</div>
 	</footer>
@@ -371,17 +383,32 @@
 
 	<script>
 
+		var norepeat
+
 		var frases = [
 			"Hola",
 			"Hola Caracola",
 			"Adiós",
 			"Muy buenas",
 			"¿Qué tal?",
-			"¿Cómo va el día?"
+			"¿Cómo va el día?",
+			"¿Cuál es el orígen del universo?",
+			"¿Crees en Dios?",
+			"¿Qué opinas de la integración de China en el mercado internacional?",
+			"Wabba labba dub dub! Nena! Soy Rick Sanchez nena!"
 		];
 
 		function randomInt(min, max) {
-			return Math.floor(Math.random() * (max - min + 1)) + min;
+			
+			var newnumber = Math.floor(Math.random() * (max - min + 1)) + min;
+
+			if (newnumber == norepeat){
+				newnumber= Math.floor(Math.random() * (max - min + 1)) + min;
+			}
+			norepeat = newnumber
+
+			return newnumber
+			 
 		}
 
 		function addZero(i) {

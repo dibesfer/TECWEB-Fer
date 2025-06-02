@@ -1,1 +1,9 @@
 Hola este es un texto de prueba. Lorem ipsum blah blah blah. Lore, lore, macu macu.
+==========*==========*==========*====================*==========*==========*==========
+<!DOCTYPE html>
+<html>
+<head>
+</head>
+<body>
+</body>
+</html>
