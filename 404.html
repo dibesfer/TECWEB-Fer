@@ -8,7 +8,6 @@
 	<!-- FAVICON  -->
 	<link rel="icon" type="image/x-icon" href="assets/favicon/favicon.ico">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-
 	<meta name="empresa" content="PAU CASALS">
 	<meta name="author" content="dibesfer">
 	<meta name="description" content="Mi primera página web. Una página web de ejemplo">
@@ -17,35 +16,39 @@
 </head>
 
 <body>
-	<header>
+	<header id="homeLink">
 		<p id="consolaLocalhost"></p>
 		<h1 id="mainTitle"><a href="https://dibesfer.github.io/TECWEB-Fer/index.html">TECWEB-Fer</a></h1>
 		<p>👋 Bienvenido máquina 🤖</p>
+		
 		<h3><em>A mi primera p&aacute;gina web</em></h3>
 		<p>Hoy es <span id="diadehoy"></span></p>
-		<nav>Home | Shop | &lt;Contact&gt; | About</nav>
+		
 	</header>
+	<div id="layoutsSticky"><p><small>Sticky menu</small></p><nav><a href="#homeLink">Home</a> | <a href="#supermenu">Supermenu</a> | &lt;Contact&gt; | <a href="#creditsTitle">Credits</a></nav></div>
 
 	<div class="pattern-background"></div>
 	<hr>
+	
+
 	<main>
-        <h1>404 - page not found</h1>
-    </main>
+		<h1>404 - page not found</h1>
+	</main>
 	<hr>
 	<div class="pattern-background"></div>
 	<footer>
 
 		<br>
 		<div>
-			<img height="75px" src="https://upload.wikimedia.org/wikipedia/commons/b/b7/Flag_of_Europe.svg"
+			<img class="logo" height="75px" src="https://upload.wikimedia.org/wikipedia/commons/b/b7/Flag_of_Europe.svg"
 				title="Unión Europea">
-			<img height="75px"
+			<img class="logo" height="75px"
 				src="https://upload.wikimedia.org/wikipedia/commons/7/7d/Escudo_de_Espa%C3%B1a_%28variant%29.svg"
 				title="Reino de España">
-			<img height="75px"
+			<img class="logo" height="75px"
 				src="https://upload.wikimedia.org/wikipedia/commons/0/0f/Escut_de_Catalunya_%28apuntat%29.svg"
 				title="Escudo de Cataluña">
-			<img height="75px"
+			<img class="logo" height="75px"
 				src="https://upload.wikimedia.org/wikipedia/commons/1/1a/Escut_de_L%27Hospitalet_de_Llobregat.svg"
 				title="Hospitalet de Llobregat">
 		</div>
@@ -63,15 +66,21 @@
 
 		<p class="greatWord">上帝</p>
 		<p> Shàngdì = Dios en chino</p>
+		<!-- CREDITS -->
 		<div id="credits">
 			<h2 id="creditsTitle">Credits</h2>
-			<p>Font: Ubuntu <a href="https://fonts.google.com/specimen/Ubuntu">link</a></p>
-			<p>Hosting: Github Pages <a href="https://pages.github.com/">link</a></p>
-			<p>Source Code: Github <a href="https://github.com/dibesfer/TECWEB-Fer">link</a></p>
-			<p>Author: dibesfer <a href="https://dibesfer.github.io">link</a> Mail: <a href="mailto:dibesfer@gmail.com">dibesfer@gmail.com</a></p>
-			<p>Favicon made with <a href="https://favicon.io/favicon-generator/">favicon.io</a> with Zain font</p>
-			<p>Made by Ferrán Minero &copy; 2025-05-29</p>
+			<div id="creditsList">
+				<ul>
+				<li>Font: Ubuntu <a href="https://fonts.google.com/specimen/Ubuntu">link</a></li>
+				<li>Hosting: Github Pages <a href="https://pages.github.com/">link</a></li>
+				<li>Source Code: Github <a href="https://github.com/dibesfer/TECWEB-Fer">link</a></li>
+				<li>Author: dibesfer <a href="https://dibesfer.github.io">link</a> Mail: <a href="mailto:dibesfer@gmail.com">dibesfer@gmail.com</a></li>
+				<li>Favicon made with <a href="https://favicon.io/favicon-generator/">favicon.io</a> with Zain font</li>
+				<li>Made by Ferrán Minero &copy; 2025-05-29</li>
+				</ul>
+			</div>
 		</div>
+		<br><br>
 	</footer>
 
 
