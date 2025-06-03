@@ -55,6 +55,21 @@ footer {
 
 }
 
+#creditsList {
+    color: blue;
+    text-align: left;
+    width: max-content;
+    margin: auto;
+    max-width: 100%;
+    background-color: gold;
+    border-radius: 15px;
+    padding: 10px 0;
+}
+
+/* #creditsList > ul {
+    padding: 0;
+} */
+
 #mainTitle {
     
     text-shadow: 3px 3px 1px darkgreen;
@@ -199,3 +214,35 @@ iframe {
 			transform: scale(-1, 1);
 			content: "➯ "
 		} */
+
+#layoutsFixed {
+    background-color: blue;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    text-align: center;
+    color: white;
+    z-index: 100;
+}
+
+#layoutsAbsolute{
+    background-color: pink;
+    position: absolute;
+    
+    bottom: 10px
+}
+
+#layoutsRelative {
+    background-color: limegreen;
+    position: relative;
+    left: -50px;
+}
+
+#layoutsSticky{
+    position: sticky;
+    top:0;
+    background-color: red;
+    z-index: 100;
+    text-align: center;
+}
