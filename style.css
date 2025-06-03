@@ -296,19 +296,19 @@ iframe {
     text-align: center;
     color: white;
     font-size: xx-large;
-    border: solid 3px black;
+    /* border: solid 3px black; */
     aspect-ratio: 1;
     flex:33.33%;
     width: 33.33%;
-    padding: 5px;
+    padding: 15px;
     
 }
 
-.flexText div:nth-child(even) {
+.flexText > div:nth-child(even) {
     background-color: blue
 }
 
-.flexText div:nth-child(odd) {
+.flexText > div:nth-child(odd) {
     background-color: red
 }
 
@@ -317,4 +317,5 @@ iframe {
     width: 100%;
     height: 100%;
     align-content: center;
+    background-color: rgba(0, 0, 0, 0.315);
 }
