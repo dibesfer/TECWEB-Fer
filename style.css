@@ -257,8 +257,16 @@ iframe {
 
 #hackingImage {
     border: 1px solid black;
-    position: relative;
-    top:0;
-    left: 25px;
+
     width: 400px;
+}
+
+#hackingImage:hover {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    height: 100vh;
+    z-index: 101;
 }
