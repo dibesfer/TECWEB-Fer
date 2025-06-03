@@ -56,9 +56,10 @@ footer {
 }
 
 #mainTitle {
-    color: limegreen;
+    
     text-shadow: 3px 3px 1px darkgreen;
     letter-spacing: 2pt;
+    
     /* text-decoration: underline */
 }
 
