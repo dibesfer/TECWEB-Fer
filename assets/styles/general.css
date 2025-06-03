@@ -3,6 +3,10 @@
     box-sizing: border-box
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 @font-face {
     font-family: 'Ubuntu';
     src: url('https://dibesfer.com/TECWEB-Fer/assets/fonts/Ubuntu-Regular.ttf');
@@ -12,7 +16,7 @@
 body {
     line-height: 2;
     background-color: lightyellow;
-    font-family: ubuntu;
+    font-family: Ubuntu;
 }
 
 a {

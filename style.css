@@ -235,7 +235,8 @@ iframe {
 #layoutsAbsolute{
     background-color: pink;
     position: absolute;
-    bottom: 10px;
+    top: 10px;
+    right: 10px;
 }
 
 #layoutsRelative {
@@ -251,7 +252,7 @@ iframe {
     z-index: 100;
     text-align: center;
     color: white;
-    background-color: chocolate;
+    background-color: rgb(130, 64, 17);
 }
 
 #hackingImage {
