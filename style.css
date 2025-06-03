@@ -56,7 +56,7 @@ footer {
 }
 
 #creditsList {
-    color: blue;
+    color: rgb(60, 60, 60);
     text-align: left;
     width: max-content;
     margin: auto;
@@ -64,6 +64,14 @@ footer {
     background-color: gold;
     border-radius: 15px;
     padding: 10px 0;
+}
+
+#creditsTitle::before {
+    content: "🙠 ";
+}
+
+#creditsTitle::after {
+    content: " 🙢";
 }
 
 /* #creditsList > ul {
@@ -127,13 +135,7 @@ iframe {
     max-width: 100%
 }
 
-#creditsTitle::before {
-    content: "🙠 ";
-}
 
-#creditsTitle::after {
-    content: " 🙢";
-}
 
 .decoImage {
     background-color: pink;
@@ -245,4 +247,6 @@ iframe {
     background-color: red;
     z-index: 100;
     text-align: center;
+    color: white;
+    background-color: chocolate;
 }
