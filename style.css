@@ -3,7 +3,7 @@
 @import url("assets/styles/general.css");
 
 :root {
-    --ancho : 800px
+    --ancho: 800px
 }
 
 header {
@@ -87,10 +87,10 @@ footer {
 } */
 
 #mainTitle {
-    
+
     text-shadow: 3px 3px 1px darkgreen;
     letter-spacing: 2pt;
-    
+
     /* text-decoration: underline */
 }
 
@@ -109,7 +109,7 @@ footer {
     box-shadow: inset 0 0 15px purple;
     font-family: monospace;
     font-size: x-large;
-    width: max-content;
+    width: 50%;
 }
 
 .blueBox {
@@ -240,7 +240,7 @@ iframe {
     z-index: 100;
 }
 
-#layoutsAbsolute{
+#layoutsAbsolute {
     background-color: pink;
     position: absolute;
     top: 10px;
@@ -253,9 +253,9 @@ iframe {
     left: -50px;
 }
 
-#layoutsSticky{
+#layoutsSticky {
     position: sticky;
-    top:0;
+    top: 0;
     background-color: red;
     z-index: 100;
     text-align: center;
@@ -283,43 +283,43 @@ iframe {
 }
 
 .logo {
-    filter: drop-shadow( 0 0 5px white);
+    filter: drop-shadow(0 0 5px white);
 }
 
-.flexText{
+.flexText {
     display: flex;
     flex-wrap: wrap;
     line-height: 1;
 }
 
-.flexText > div {
+.flexText>div {
     text-align: center;
     color: white;
     font-size: 100%;
     /* border: solid 3px black; */
     aspect-ratio: 1;
-    flex:33.33%;
+    flex: 33.33%;
     width: 33.33%;
     padding: 15px;
     transition: 0.4s;
-    
+
 }
 
-.flexText > div:hover {
+.flexText>div:hover {
     padding: 5px;
     /* font-size:300%; */
 
 }
 
-.flexText > div:nth-child(even) {
+.flexText>div:nth-child(even) {
     background-color: blue
 }
 
-.flexText > div:nth-child(odd) {
+.flexText>div:nth-child(odd) {
     background-color: red
 }
 
-.flexText > div > div {
+.flexText>div>div {
     border: 2px dashed white;
     width: 100%;
     height: 100%;
@@ -328,19 +328,19 @@ iframe {
 
     display: flex;
     align-items: center;
-    
+
     overflow: hidden;
     flex-direction: column;
-    
+
 }
 
-.flexText > div > div:hover {
+.flexText>div>div:hover {
     background-color: rgba(9, 132, 0, 0.664);
     content: "spñs"
 }
 
 /* FLEX 3X3 */
-.flex3x3{
+.flex3x3 {
     display: flex;
     justify-content: space-around;
     align-items: center;
@@ -348,32 +348,80 @@ iframe {
 }
 
 @media only screen and (max-width: 600px) {
-  body {
-    background-color: lightblue;
-  }
+    body {
+        background-color: lightblue;
+    }
 }
 
 .beauticard {
-    width:300px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    width: 100%;
     aspect-ratio: 1;
+    background-color: rgb(174, 174, 174);
     border: solid 3px black;
+    border-radius: 15px;
     overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.beauticard>div {
+    border: solid 3px black;
+
 }
 
 .beauticard-title {
-    border: solid 3px black;
+    background-color: chocolate;
+    padding: 2px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 50px;
+}
+
+#bt-3 {
+    height: 100%;
+    color: blue;
+    border: double 3px gold;
+    border-radius: 50%;
+}
+
+#bt-3 > img {
+    height: 100%;
+    
+}
+
+.beauticard-stars{
+    padding: 5px;
+    display: flex;
+    justify-content: flex-end;
+    max-height: 40px;
+}
+
+.beauticard-stars > img {
+    filter: drop-shadow(2px 2px black);
 }
 
 .beauticard-image {
     aspect-ratio: 16/9;
     overflow: hidden;
-    border: solid 3px black;
+
+}
+
+.beauticard-image > img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
 }
 
 .beauticard-description {
- border: solid 3px black;   
+    padding: 2px;
+    flex: 1;
 }
 
 .beauticard-extra {
-    border: solid 3px black;
+    font-size: small;
+    padding: 2px;
+
 }
