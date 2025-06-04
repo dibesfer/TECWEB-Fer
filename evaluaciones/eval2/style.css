@@ -1,0 +1,44 @@
+:root {
+    --border: 4px;
+}
+/* var(--border) */
+* {
+    box-sizing: border-box;
+}
+
+img {
+    max-width: 100%;
+}
+
+header > div {
+    float: left;
+    background-color: orange;
+    width: 50%;
+    height: 50px;
+    border: var(--border) solid white;
+}
+
+#main1 {
+    clear: both;
+    padding: 15px;
+    background-color: green;
+    border: var(--border) solid white;
+    height: 400px;
+}
+
+#main2 > div {
+    float: left;
+    width: 33.33%;
+    background-color: blue;
+    border: var(--border) solid white;
+    height: 50px;
+    
+}
+
+footer > div {
+    background-color: gray;
+    border: var(--border) solid white;
+    height: 50px;
+    float: left;
+    width: 25%;
+}
