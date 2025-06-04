@@ -352,3 +352,28 @@ iframe {
     background-color: lightblue;
   }
 }
+
+.beauticard {
+    width:300px;
+    aspect-ratio: 1;
+    border: solid 3px black;
+    overflow: hidden;
+}
+
+.beauticard-title {
+    border: solid 3px black;
+}
+
+.beauticard-image {
+    aspect-ratio: 16/9;
+    overflow: hidden;
+    border: solid 3px black;
+}
+
+.beauticard-description {
+ border: solid 3px black;   
+}
+
+.beauticard-extra {
+    border: solid 3px black;
+}
