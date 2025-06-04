@@ -347,11 +347,7 @@ iframe {
     flex-wrap: wrap;
 }
 
-@media only screen and (max-width: 600px) {
-    body {
-        background-color: lightblue;
-    }
-}
+
 
 .beauticard {
     flex: 33.33%;
@@ -400,6 +396,7 @@ iframe {
 
 #bt-3 > img {
     height: 100%;
+    vertical-align: middle;
     
 }
 
@@ -435,7 +432,8 @@ iframe {
     flex: 1;
     display: flex;
     flex-direction: column;
-    background-color: gray;
+    background-color: rgb(90, 90, 90);
+    color: white;
 
 }
 
@@ -463,15 +461,23 @@ iframe {
     flex-wrap: wrap;
 }
 
-@media (max-width:400px){
-    .beauticard {
-        flex: 100%;
-    }
-}
+
 
 @media (max-width:600px){
     .beauticard {
         flex: 50%;
         max-width: 50%;
+    }
+    
+}@media only screen and (max-width: 600px) {
+    
+}
+@media (max-width:400px){
+    .beauticard {
+        flex: 100%;
+        max-width: 100%;
+    }
+    body {
+        background-color: black;
     }
 }
