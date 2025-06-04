@@ -1,30 +1,37 @@
 [
     {
-        "name": "Pikachu",
-        "type": "Eléctrico",
+        "name": "Ivysaur",
+        "type": "Planta",
         "level": 25,
-        "description" : null,
-        "image" : ""
+        "desc" : "Parece una cebolleta",
+        "image" : "https://www.pokemon.com/static-assets/content-assets/cms2/img/pokedex/full/002.png"
     },
     {
         "name": "Pikachu",
         "type": "Eléctrico",
         "level": 25,
-        "description" : null,
-        "image" : ""
+        "desc" : "Este pokemon echa chispas",
+        "image" : "https://www.pokemon.com/static-assets/content-assets/cms2/img/pokedex/full/025.png"
     },
     {
-        "name": "Pikachu",
-        "type": "Eléctrico",
+        "name": "Abra",
+        "type": "Psíquico",
         "level": 25,
-        "description" : null,
-        "image" : ""
+        "desc" : "Vive durmiendo. A ver si lo atrapas, porque a la que se despierta se teletransporta.",
+        "image" : "https://www.pokemon.com/static-assets/content-assets/cms2/img/pokedex/full/063.png"
     },
     {
-        "name": "Pikachu",
-        "type": "Eléctrico",
+        "name": "Kadabra",
+        "type": "Psíquico",
         "level": 25,
-        "description" : null,
-        "image" : ""
+        "desc" : "Es la evolución con el diseño más chulo. Lamentablemente, Alakazam es más poderoso en estadísticas.",
+        "image" : "https://images.wikidexcdn.net/mwuploads/wikidex/thumb/b/b0/latest/20220912175715/Kadabra.png/800px-Kadabra.png"
+    },
+    {
+        "name": "Alakazam",
+        "type": "Psíquico",
+        "level": 25,
+        "desc" : "Dicen que su mente es como una super computadora y recuerda todo desde su nacimiento.",
+        "image" : "https://www.pokemon.com/static-assets/content-assets/cms2/img/pokedex/full/065.png"
     }
 ]
