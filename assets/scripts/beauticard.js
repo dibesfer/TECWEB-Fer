@@ -1,7 +1,7 @@
 
 var bccounter = document.getElementById("bc-counter")
 
-fetch("https://dibesfer.com/TECWEB-Fer/assets/json/beauticard.json")
+fetch("../assets/json/beauticard.json")
   .then(response => response.json())
   .then(elements => {
     
@@ -17,8 +17,8 @@ fetch("https://dibesfer.com/TECWEB-Fer/assets/json/beauticard.json")
                 <div id="bt-1">${element.level}</div>
                 <div id="bt-2"><b>${element.name}</b></div>
                 <div id="bt-3">
-                    <img style="vertical-align: middle;"
-                        src="https://upload.wikimedia.org/wikipedia/commons/f/f7/Japanese_Imperial_Seal.svg"
+                    <img
+                        src="${element.icon}"
                         alt="">
                 </div>
 
