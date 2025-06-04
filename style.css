@@ -359,7 +359,7 @@ iframe {
     max-width: 100%;
     aspect-ratio: 2/3;
     background-color: rgb(174, 174, 174);
-    border: solid 3px black;
+    border: solid 6px black;
     border-radius: 15px;
     overflow: hidden;
     display: flex;
@@ -419,6 +419,19 @@ iframe {
 .beauticard-description {
     padding: 2px;
     flex: 1;
+    display: flex;
+    flex-direction: column;
+
+}
+
+.beauticard-description > p {
+    font-style: italic;
+    font-size: 12px;
+}
+
+#bt-d-under {
+    margin-top: auto;
+    
 }
 
 
