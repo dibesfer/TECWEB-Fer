@@ -1,4 +1,7 @@
-fetch("/assets/json/beauticard.json")
+
+var bccounter = document.getElementById("bc-counter")
+
+fetch("../assets/json/beauticard.json")
   .then(response => response.json())
   .then(elements => {
     
@@ -8,18 +11,10 @@ fetch("/assets/json/beauticard.json")
       const card = document.createElement("div");
       card.classList.add("beauticard");
 
-
-
-
-      
-
-
-
-
       card.innerHTML = `
         <div class="bc-wrapper">
             <div class="beauticard-title">
-                <div id="bt-1">1</div>
+                <div id="bt-1">${element.level}</div>
                 <div id="bt-2"><b>${element.name}</b></div>
                 <div id="bt-3">
                     <img style="vertical-align: middle;"
@@ -63,6 +58,7 @@ fetch("/assets/json/beauticard.json")
         </div>
       `;
       contenedor.appendChild(card);
+      bccounter.textContent = " - " + elements.length + " cards to discover!"
     });
   })
   .catch(error => {
