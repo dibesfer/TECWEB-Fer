@@ -355,8 +355,9 @@ iframe {
 
 .beauticard {
     font-family: Verdana, Geneva, Tahoma, sans-serif;
-    width: 100%;
-    aspect-ratio: 1;
+    width: 350px;
+    max-width: 100%;
+    aspect-ratio: 2/3;
     background-color: rgb(174, 174, 174);
     border: solid 3px black;
     border-radius: 15px;
@@ -419,6 +420,7 @@ iframe {
     padding: 2px;
     flex: 1;
 }
+
 
 .beauticard-extra {
     font-size: small;
