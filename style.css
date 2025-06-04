@@ -289,19 +289,26 @@ iframe {
 .flexText{
     display: flex;
     flex-wrap: wrap;
-    
+    line-height: 1;
 }
 
 .flexText > div {
     text-align: center;
     color: white;
-    font-size: xx-large;
+    font-size: 100%;
     /* border: solid 3px black; */
     aspect-ratio: 1;
     flex:33.33%;
     width: 33.33%;
     padding: 15px;
+    transition: 0.4s;
     
+}
+
+.flexText > div:hover {
+    padding: 5px;
+    /* font-size:300%; */
+
 }
 
 .flexText > div:nth-child(even) {
@@ -313,9 +320,35 @@ iframe {
 }
 
 .flexText > div > div {
-    border: 3px solid white;
+    border: 2px dashed white;
     width: 100%;
     height: 100%;
-    align-content: center;
+    /* align-content: center; */
     background-color: rgba(0, 0, 0, 0.315);
+
+    display: flex;
+    align-items: center;
+    
+    overflow: hidden;
+    flex-direction: column;
+    
+}
+
+.flexText > div > div:hover {
+    background-color: rgba(9, 132, 0, 0.664);
+    content: "spñs"
+}
+
+/* FLEX 3X3 */
+.flex3x3{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+@media only screen and (max-width: 600px) {
+  body {
+    background-color: lightblue;
+  }
 }
