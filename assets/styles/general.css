@@ -9,9 +9,16 @@ html {
 
 @font-face {
     font-family: 'Ubuntu';
-    src: url('https://dibesfer.com/TECWEB-Fer/assets/fonts/Ubuntu-Regular.ttf');
+    src: url('https://dibesfer.com/TECWEB-Fer/assets/fonts/Ubuntu/Ubuntu-Regular.ttf');
     /* https://dibesfer.github.io/TECWEB-Fer/assets/fonts/Ubuntu-Regular.ttf */
 }
+
+@font-face {
+    font-family: 'Oregano';
+    src: url('https://dibesfer.com/TECWEB-Fer/assets/fonts/Oregano/Oregano-Regular.ttf');
+    /* https://dibesfer.github.io/TECWEB-Fer/assets/fonts/Ubuntu-Regular.ttf */
+}
+
 
 body {
     line-height: 2;
