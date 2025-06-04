@@ -5,40 +5,68 @@
 * {
     box-sizing: border-box;
 }
-
 img {
     max-width: 100%;
 }
-
-header > div {
-    float: left;
+header>div {
     background-color: orange;
-    width: 50%;
-    height: 50px;
+    height: 60px;
     border: var(--border) solid white;
 }
-
 #main1 {
-    clear: both;
-    padding: 15px;
     background-color: green;
+    height: 90px;
     border: var(--border) solid white;
-    height: 400px;
+    overflow: auto;
+    padding: 15px;
 }
-
-#main2 > div {
-    float: left;
-    width: 33.33%;
+#main1>img {
+    height: 100%;
+    object-fit: contain;
+}
+#main2>div {
     background-color: blue;
     border: var(--border) solid white;
-    height: 50px;
-    
+    height: 120px;
 }
-
-footer > div {
+footer>div {
     background-color: gray;
     border: var(--border) solid white;
-    height: 50px;
-    float: left;
-    width: 25%;
+    height: 60px;
+}
+
+@media (min-width:768px) {
+
+    #main1 {
+        height: 320px;
+    }
+    #main2>div {
+        height: 60px;
+    }
+    footer>div {
+        float: left;
+        width: 50%;
+    }
+}
+
+@media (min-width:1024px) {
+    header>div {
+        float: left;
+        width: 50%;
+        height: 80px;
+    }
+    #main1 {
+        clear: both;
+        height: 400px;
+    }
+    #main2>div {
+        float: left;
+        width: 33.33%;
+        height: 120px;
+    }
+    footer>div {
+        height: 80px;
+        float: left;
+        width: 25%;
+    }
 }
