@@ -1,7 +1,7 @@
 
 var bccounter = document.getElementById("bc-counter")
 
-fetch("https://dibesfer.github.io/TECWEB-Fer/assets/json/beauticard.json")
+fetch("https://dibesfer.com/TECWEB-Fer/assets/json/beauticard.json")
   .then(response => response.json())
   .then(elements => {
     
